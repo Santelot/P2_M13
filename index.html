@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook P2-M13</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { width: 95%; margin: auto; }
+        .dropdown { margin-bottom: 20px; }
+        .time-title { font-size: 1.2em; font-weight: bold; }
+        .activity { margin-bottom: 30px; }
+        .banner { background-color: #4CAF50; color: white; padding: 10px; cursor: pointer; }
+        .title { font-weight: bold; }
+        .subtitle { font-style: italic; }
+        .content { display: none; padding: 10px; border: 1px solid #ddd; }
+        table { width: 100%; border-collapse: collapse; }
+        td { padding: 8px; border: 1px solid #ddd; vertical-align: top; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Playbook P2-M13</h1>
+        
+        <div class="dropdown">
+            <label for="class-time">Tiempo efectivo de Clase:</label>
+            <select id="class-time" onchange="updateContent()">
+                <option value="50">50 minutos</option>
+                <option value="45">45 minutos</option>
+                <option value="40">40 minutos</option>
+            </select>
+        </div>
+
+        <h2 id="selected-time" class="time-title">Tiempo efectivo de clase: 50 minutos</h2>
+
+        <!-- Actividad 0 -->
+<div id="activity-0" class="activity">
+    <div class="banner" onclick="toggleContent('revision_mision')">
+        <div class="title">📚 Actividad 0: Revisión de Misión</div>
+        <div class="subtitle">Preparación de recursos para la misión.</div>
+    </div>
+    <div id="revision_mision" class="content">
+        <table>
+            <tr>
+                <td><strong>PASO 1:</strong> Revisar la disponibilidad de Magic Boards, dispositivos con acceso a Internet, y la proyección adecuada de las diapositivas.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> No hay diálogo para los estudiantes, esta actividad es interna del profesor.</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- Actividad 1 -->
+<div id="activity-1" class="activity">
+    <div class="banner" onclick="toggleContent('saludo_ritual')">
+        <div class="title">🎉 Actividad 1: Saludo y Ritual Gnius Club</div>
+        <div class="subtitle">Bienvenida y presentación del tema.</div>
+    </div>
+    <div id="saludo_ritual" class="content">
+        <table>
+            <tr>
+                <td><strong>PASO 1 (0.5 minutos):</strong> Proyectar Diapositiva 1: Saludar a los estudiantes por su nombre y presentar el tema del día.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "¡Hola, Genios! ¿Están listos para comenzar una nueva aventura de aprendizaje? Hoy vamos a explorar algo increíble: ¡el mundo de Scratch! 🎉"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 2 (1 minuto):</strong> Proyectar Diapositiva 2: Pedir que los estudiantes elijan una posición para indicar su estado de ánimo.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Si están súper emocionados por aprender Scratch, ¡levanten los brazos bien alto! Si sienten que necesitan un poco más de energía, crucen los brazos. ¡A ver cómo estamos hoy!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 3 (0.5 minutos):</strong> Proyectar Diapositiva 3: Guiar a los estudiantes en el ritual de agradecimiento.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Antes de comenzar, vamos a unir nuestras manos y dar gracias por este tiempo para aprender juntos. ¡Gracias por estar aquí, Genios! Hoy será un gran día de descubrimiento y diversión en Scratch."</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 4 (1 minuto):</strong> Proyectar Diapositiva 4: Explicar los objetivos del día de manera sencilla y clara.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Hoy aprenderemos a navegar en la interfaz de Scratch, conoceremos los bloques básicos de programación y exploraremos cómo usar la plataforma para crear cosas increíbles. ¡Prepárense para convertirse en verdaderos creadores digitales!"</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- Actividad 2 -->
+<div id="activity-2" class="activity">
+    <div class="banner" onclick="toggleContent('innovacion_dia')">
+        <div class="title">💡 Actividad 2: Innovación del Día</div>
+        <div class="subtitle">Exploración de la aplicación de la programación en la vida cotidiana.</div>
+    </div>
+    <div id="innovacion_dia" class="content">
+        <table>
+            <tr>
+                <td><strong>PASO 1 (0.5 minutos):</strong> Proyectar Diapositiva 5: Explicar brevemente el impacto de la programación en kioscos interactivos.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "¡Genios! Hoy les traigo algo súper interesante: los kioscos de información interactiva. Estos dispositivos usan programación para ayudarnos a buscar información fácilmente en lugares públicos. ¡Veamos cómo funciona!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 2 (2 minutos):</strong> Proyectar Diapositiva 6: Reproducir un video de 1 minuto que muestre un kiosco interactivo en uso y explique cómo sigue una secuencia de comandos.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Vamos a ver cómo los kioscos de información usan programación para guiar a las personas. ¡Noten cómo responden al tacto y muestran información útil!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 3 (2 minutos):</strong> Proyectar Diapositiva 7: Hacer preguntas para que los estudiantes reflexionen sobre cómo la programación en los kioscos facilita la vida cotidiana.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "¿Qué piensan, Genios? ¿Cómo creen que los kioscos interactivos ayudan en lugares como aeropuertos o museos? ¿Y dónde más creen que la programación puede ser útil en la vida diaria?"</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- Actividad 3 -->
+<div id="activity-3" class="activity">
+    <div class="banner" onclick="toggleContent('brain_gym')">
+        <div class="title">🧠 Actividad 3: Brain Gym</div>
+        <div class="subtitle">Ejercicio de programación en Scratch.</div>
+    </div>
+    <div id="brain_gym" class="content">
+        <table>
+            <tr>
+                <td><strong>PASO 1 (0.5 minutos):</strong> Proyectar Diapositiva 8: Anunciar la actividad Brain Gym y mencionar el Easter Egg oculto.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "¡Genios! Hoy vamos a explorar Scratch y aprender a programar usando bloques. Además, escondí un Easter Egg en esta actividad. ¡Presten mucha atención a cada paso, y recuerden que al final de la clase las tres personas que contesten la pregunta de el Easter Egg recibirá Mon-e extra!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 2 (1 minuto):</strong> Proyectar Diapositiva 9: Explicar cómo seleccionar el escenario en Scratch y elegir un fondo para empezar.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Antes de que empecemos a mover a nuestros personajes, vamos a preparar el escenario. En Scratch, el escenario es el fondo donde ocurren todas las acciones. Vean el botón que dice 'Escenarios' en la esquina inferior derecha. Hagan clic allí y elijan un fondo divertido para que sea el lugar donde actúen sus personajes. ¡El escenario es como el escenario de un teatro donde ocurrirá toda la acción!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 3 (1.5 minutos):</strong> Proyectar Diapositiva 10: Explicar la función de cada área principal de la interfaz con una guía visual.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Veamos la pantalla de Scratch, Genios. Primero, tenemos el 'Escenario' en la esquina superior derecha, donde se mostrarán nuestros personajes y animaciones. Luego, a la izquierda, tenemos los 'Bloques de Código', organizados en categorías: Movimiento (bloques azules para mover personajes), Apariencia (bloques morados para cambiar cómo se ven o hablan), Sonido, Eventos, Control, y más. Finalmente, el 'Área de Scripts' es el lugar grande en el centro donde arrastraremos los bloques para armar nuestras secuencias. ¡También tenemos una pestaña para agregar y editar personajes! Cada personaje puede recibir sus propias instrucciones y aparecer en el escenario."</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 4 (1 minuto):</strong> Proyectar Diapositiva 11: Mostrar cómo seleccionar o cambiar el personaje en Scratch.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "En Scratch, empezamos con un personaje que es el gatito Scratch, ¡nuestro protagonista! Si quieren cambiarlo, hagan clic en la pestaña 'Personajes' debajo del escenario y elijan otro, o incluso agreguen uno más. ¡Así podemos tener una escena con varios personajes que interactúan!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 5 (1 minuto):</strong> Proyectar Diapositiva 12: Demostrar cómo colocar el bloque de "iniciar al hacer clic en la bandera" y el bloque "mover 10 pasos".</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Vamos a hacer que el personaje se mueva. Primero, vean el bloque amarillo que dice 'al hacer clic en la bandera'. Esto es como un botón de inicio para nuestros personajes: cada vez que demos clic en la bandera verde en la esquina superior del escenario, los bloques que pongamos debajo se activarán. Arrastren este bloque al área de scripts. Luego, en la categoría de 'Movimiento', encuentren el bloque azul que dice 'mover 10 pasos' y colóquenlo debajo del bloque de inicio. ¡Así le decimos al personaje que se mueva 10 pasos cada vez que iniciamos!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 6 (1 minuto):</strong> Proyectar Diapositiva 13: Explicar cómo usar el bloque de apariencia para añadir un mensaje en el escenario.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Vamos a hacer que el personaje diga algo en el escenario. Busquen en la categoría 'Apariencia' y encuentren el bloque morado que dice 'decir Hola por 2 segundos'. Arrastren este bloque debajo del de movimiento. Ahora, nuestro personaje dirá 'Hola' en el escenario después de moverse. ¡Es como si estuviera saludando a todos!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 7 (1.5 minutos):</strong> Proyectar Diapositiva 14: Mostrar cómo utilizar el bloque de control "repetir" para repetir movimientos.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Ahora, para que nuestro personaje repita el movimiento, usaremos el bloque de 'control'. Busquen el bloque amarillo que dice 'repetir 10' y colóquenlo alrededor del bloque de movimiento. Ahora, cada vez que demos clic en la bandera, el personaje repetirá la acción 10 veces. ¡Usamos el bucle para que no tengamos que dar la misma orden una y otra vez!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 8 (1 minuto):</strong> Proyectar Diapositiva 15: Guiar una breve reflexión sobre el uso de los bloques para programar.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Genios, ¿cómo les fue? ¿Qué bloques usaron para hacer que su personaje cobrara vida? ¿Les parece más fácil o difícil que dibujar en papel? ¡Reflexionemos sobre lo que aprendimos hoy!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 9 (0.5 minutos):</strong> Proyectar Diapositiva 16: Repasar los objetivos del día y los elementos de la interfaz que exploraron.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Hoy descubrimos cómo usar el escenario, bloques de inicio, movimiento, apariencia y control. ¡Y todo esto fue solo el inicio! Pronto podremos hacer programas más complejos en Scratch. ¡Increíble trabajo, equipo!"</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- Actividad 4 -->
+<div id="activity-4" class="activity">
+    <div class="banner" onclick="toggleContent('brain_vitamin')">
+        <div class="title">💪 Actividad 4: Brain Vitamin</div>
+        <div class="subtitle">Ejercicio de recarga de energía y secuenciación.</div>
+    </div>
+    <div id="brain_vitamin" class="content">
+        <table>
+            <tr>
+                <td><strong>PASO 1 (0.5 minutos):</strong> Proyectar Diapositiva 17: Explicar que harán un ejercicio rápido para "recargar" la energía de sus cerebros.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "¡Genios! Antes de seguir, recarguemos nuestras energías con un Brain Vitamin. Vamos a hacer un ejercicio rápido que nos ayudará a despertar nuestras mentes. ¡Sigan mis instrucciones y diviértanse!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 2 (1 minuto):</strong> Proyectar Diapositiva 18: Indicar los movimientos de secuencia para que los estudiantes los sigan.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Vamos a practicar una secuencia sencilla: cuando diga 'arriba', levanten las manos; cuando diga 'derecha', giren hacia la derecha; cuando diga 'izquierda', giren hacia la izquierda. ¡A ver quién puede seguir la secuencia completa sin confundirse!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 3 (0.5 minutos):</strong> Sin diapositiva: Explicar cómo el ejercicio ayuda a los estudiantes a entender la importancia de seguir secuencias.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "¡Muy bien, Genios! ¿Vieron cómo seguir una secuencia correcta nos ayuda a no perdernos? En programación es igual: necesitamos que cada paso esté en orden para que nuestras instrucciones funcionen bien. ¡Están listos para seguir programando!"</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- Actividad 5 -->
+<div id="activity-5" class="activity">
+    <div class="banner" onclick="toggleContent('team_gnius')">
+        <div class="title">🤝 Actividad 5: Team Gnius</div>
+        <div class="subtitle">Formación de equipos y colaboración.</div>
+    </div>
+    <div id="team_gnius" class="content">
+        <table>
+            <tr>
+                <td><strong>PASO 1 (0.5 minutos):</strong> Proyectar Diapositiva 19: Explicar la formación de equipos y la importancia de colaborar.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "¡Genios, es momento de trabajar en equipo! Nos organizaremos en parejas para el desafío, y cada uno tendrá un rol especial. Uno de ustedes será el 'Programador Principal' y el otro será el 'Asistente de Programación'. ¡Ambos roles son esenciales para el éxito del equipo!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 2 (0.5 minutos):</strong> Proyectar Diapositiva 20: Mostrar un temporizador de 30 segundos para que los estudiantes se organicen en equipos y definan sus roles.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Tienen 30 segundos para encontrar a su compañero y decidir quién será el Programador Principal y quién el Asistente de Programación. ¡Elijan sabiamente y prepárense para colaborar!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 3 (0.5 minutos):</strong> Proyectar Diapositiva 21: Recordar que cada alumno usará su propia Magic Tablet, pero que colaborarán en equipo.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Aunque cada uno tendrá su propia Magic Tablet, trabajarán en conjunto. El Programador Principal tomará la iniciativa en el código, mientras el Asistente ayudará a revisar y proponer ideas. ¡Recuerden, el trabajo en equipo nos hace más fuertes!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 4 (0.5 minutos):</strong> Proyectar Diapositiva 22: Mostrar un temporizador de 30 segundos para que los estudiantes preparen sus tablets y confirmen que están listas.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Asegúrense de que sus Magic Tablets están listas y conectadas. ¡Tienen 30 segundos para verificar que todo esté funcionando!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 5 (0.5 minutos):</strong> Sin diapositiva: Explicar la importancia de la colaboración y comunicación entre los compañeros durante el desafío.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "¡Genios, ahora que están organizados, recuerden que la clave está en la comunicación! Asegúrense de compartir sus ideas, escuchar a su compañero y trabajar juntos para lograr los mejores resultados. ¡El trabajo en equipo nos llevará al éxito!"</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- Actividad 6 -->
+<div id="activity-6" class="activity">
+    <div class="banner" onclick="toggleContent('challenge')">
+        <div class="title">🚀 Actividad 6: Challenge</div>
+        <div class="subtitle">Desafío de Paper Programming y Scratch.</div>
+    </div>
+    <div id="challenge" class="content">
+        <table>
+            <tr>
+                <td><strong>PASO 1 (1 minuto):</strong> Proyectar Diapositiva 23 "Introducción al Paper Programming".</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Antes de empezar a programar en Scratch, vamos a aprender un método especial llamado paper programming. Este método nos ayuda a organizar nuestras ideas en papel antes de llevarlas a la computadora. Con el paper programming, podemos planear qué bloques vamos a usar y en qué orden, como si estuviéramos escribiendo un guion para nuestro personaje. ¡Vamos a descubrir cómo funciona!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 2 (1 minuto):</strong> Proyectar Diapositiva 24 "Niveles de Reto en Scratch".</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Tienen tres niveles de reto para elegir. En el nivel Rockie, usarán un personaje y un escenario. En el nivel Master, trabajarán con dos personajes y dos escenarios. Y en el nivel Hacker, usarán tres personajes y tres escenarios. ¡Elijan el que les parezca más divertido y desafiante!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 3 (1.5 minutos):</strong> Proyectar Diapositiva 25 "Observación y Planificación".</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Primero, observen la interfaz de Scratch y piensen en los pasos para crear su animación. ¿Qué instrucciones necesita su personaje para moverse, hablar o cambiar de escenario? Escriban cada paso en papel como si fuera una lista de instrucciones. Por ejemplo, podrían usar 'al hacer clic en la bandera', 'cambiar a fondo bosque', 'mover 10 pasos', o 'decir Hola'."</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 4 (10 minutos):</strong> Proyectar Diapositiva 26 "Escribe tu Paper Programming".</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Escriban cada paso detallado de su secuencia en sus Magic Tablets. Los que eligieron el nivel Rockie harán un plan para un personaje en un escenario; los del nivel Master harán un plan para dos personajes y dos escenarios; y los del nivel Hacker trabajarán con tres personajes y tres escenarios. ¡Recuerden ser claros y específicos!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 5 (2 minutos):</strong> Proyectar Diapositiva 27 "Explicación a Patito de Goma".</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Ahora que tienen su secuencia en papel, expliquen a su compañero cada paso, como si él o ella fuera un patito de goma. El compañero solo debe asentir si entiende o agitar la cabeza si no lo hace. ¡Esto les ayudará a ver si sus instrucciones son claras y fáciles de seguir!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 6 (1 minuto):</strong> Proyectar Diapositiva 28 "Intercambio de Roles".</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Ahora, cambien de roles. El que fue programador será ahora el patito de goma, y el que fue patito explicará su secuencia. ¡Recuerden ser claros y seguir el orden!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 7 (2 minutos):</strong> Proyectar Diapositiva 29 "Revisión del Trabajo".</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Ahora, tómense 2 minutos para discutir si las instrucciones de su compañero fueron claras y si hay algo que mejorar. Recuerden, el objetivo es tener una secuencia lógica y clara para trasladar a Scratch. ¡Este es el momento para mejorar sus instrucciones!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 8 (0.5 minutos):</strong> Proyectar Diapositiva 30 "Mon-e Time".</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "¡Genios, excelente trabajo! Han completado el paper programming para sus animaciones. ¡Les toca Mon-e por su esfuerzo y creatividad! Ahora repasemos los objetivos que hemos alcanzado en esta misión."</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 9 (0.5 minutos):</strong> Proyectar Diapositiva 31 "Objetivos Alcanzados".</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Hoy aprendimos a planificar nuestras animaciones en Scratch usando paper programming, y aplicamos el método del Patito de Goma para revisar nuestras instrucciones. ¡Han hecho un trabajo increíble!"</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- Actividad 7 -->
+<div id="activity-7" class="activity">
+    <div class="banner" onclick="toggleContent('easter_egg')">
+        <div class="title">🥚 Actividad 7: Easter Egg</div>
+        <div class="subtitle">Desafío sorpresa para Mon-e extra.</div>
+    </div>
+    <div id="easter_egg" class="content">
+        <table>
+            <tr>
+                <td><strong>PASO 1 (0.5 minutos):</strong> Proyectar Diapositiva 32 "¡Momento del Easter Egg!".</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "¡Genios, el momento que todos estábamos esperando ha llegado! ¿Recuerdan que les mencioné un Easter Egg oculto? Bueno, ¡aquí está! Vamos a ver quiénes prestaron atención y están listos para resolver este reto sorpresa."</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 2 (0.5 minutos):</strong> Proyectar Diapositiva 33 "¿Qué hace un bloque de evento en Scratch?".</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Aquí va la pregunta del Easter Egg: ¿Cuál es el propósito del bloque de evento 'al hacer clic en la bandera' en Scratch? ¡Tómense unos segundos para pensarlo y luego lo discutimos juntos!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 3 (1 minuto):</strong> Sin diapositiva: Invitar a algunos estudiantes a dar su respuesta en voz baja.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Voy a elegir a algunos de ustedes para que me den su respuesta en voz baja. ¿Listos? A ver quién tiene clara la función del bloque de eventos."</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 4 (1 minuto):</strong> Proyectar Diapositiva 34 "Respuesta del Easter Egg".</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "¡La respuesta correcta es… El bloque 'al hacer clic en la bandera' inicia nuestro programa cuando hacemos clic en la bandera verde! ¡Felicidades a quienes respondieron bien! ¡Han ganado Mon-e extra por su gran atención y dedicación!"</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- Actividad 8 -->
+<div id="activity-8" class="activity">
+    <div class="banner" onclick="toggleContent('honor_dojo')">
+        <div class="title">🏅 Actividad 8: Honor de Dojo</div>
+        <div class="subtitle">Reflexión y cierre de la sesión.</div>
+    </div>
+    <div id="honor_dojo" class="content">
+        <table>
+            <tr>
+                <td><strong>PASO 1 (0.5 minutos):</strong> Proyectar Diapositiva 35 "Objetivos Alcanzados".</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Genios, antes de despedirnos, vamos a ver todo lo que logramos hoy. Aprendimos a usar la interfaz de Scratch, creamos animaciones con paper programming, y hasta descubrimos un Easter Egg. ¡Increíble trabajo de todos!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 2 (0.5 minutos):</strong> Sin diapositiva: Agradecer y felicitar a los estudiantes por su dedicación y colaboración durante la clase.</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Hoy, todos hicieron un esfuerzo maravilloso. Desde el paper programming hasta los retos en Scratch, cada uno de ustedes mostró creatividad y trabajo en equipo. ¡Es un honor trabajar con genios como ustedes!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 3 (0.5 minutos):</strong> Proyectar Diapositiva 36 "Reflexión Final".</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Hoy aprendimos que cada paso cuenta en la programación, desde planificar hasta ejecutar nuestras ideas. ¿Qué les sorprendió más de trabajar en Scratch? ¿Cómo creen que podrían usar estos bloques en otros proyectos? ¡Compartan sus ideas!"</td>
+            </tr>
+            <tr>
+                <td><strong>PASO 4 (0.5 minutos):</strong> Proyectar Diapositiva 37 "Honremos el Dojo".</td>
+                <td><strong>DIÁLOGO SUGERIDO:</strong> "Y como siempre, antes de irnos, vamos a honrar nuestro espacio de trabajo. Recojan sus tablets, materiales, y asegúrense de que el salón queda tan ordenado como nuestros programas. ¡Gracias por cuidar el espacio!"</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+     
+    
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            content.style.display = (content.style.display === "block") ? "none" : "block";
+        }
+
+        function updateContent() {
+            var time = document.getElementById("class-time").value;
+            document.getElementById("selected-time").innerText = "Tiempo efectivo de clase: " + time + " minutos";
+
+            // Ajustes de visibilidad de actividades según el tiempo seleccionado
+            document.getElementById("activity-4").style.display = (time === "50") ? "block" : "none";
+            document.getElementById("activity-2").style.display = (time === "50" || time === "45") ? "block" : "none";
+        }
+
+        // Inicializar el contenido según la selección por defecto
+        updateContent();
+    </script>
+</body>
+</html>
